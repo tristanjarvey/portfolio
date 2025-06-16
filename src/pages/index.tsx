@@ -1,3 +1,11 @@
+// export default function Home() {
+//   return (
+//     <main className="bg-dark text-gold min-h-screen flex items-center justify-center">
+//       <h1 className="text-4xl font-bold">Portfolio scaffolded successfully 🎉</h1>
+//     </main>
+//   )
+// }
+
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 
