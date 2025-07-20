@@ -1,0 +1,73 @@
+[
+  {
+    "id": "multi-agentic-hackathon-optimization",
+    "title": "Multi-Agentic Hackathon Optimization",
+    "description": "A collaborative AI interface built in under 48 hours using Azure AI Foundry to streamline survey generation, outreach personalization, and insight synthesis.",
+    "technologies": ["Next.js", "React", "TypeScript", "PostgreSQL", "Azure AI"],
+    "year": 2025,
+    "features": [
+      "Won 3 of 5 awards: Best Overall Agentic AI Solution, Best Implementation Potential, and Audience Favorite",
+      "Competed against six teams to showcase integration of agentic LLMs as collaborative problem-solvers and workflow accelerators",
+      "Built a multi-agent interface enabling intelligent collaboration between user and AI agents",
+      "Developed agents for personalized messaging, dynamic form generation, and feedback-driven insights"
+    ],
+    "images": [
+      "/images/multi-agentic-hackathon-dashboard.png",
+      "/images/multi-agentic-hackathon-dashboard-2.png",
+      "/images/multi-agentic-hackathon-dashboard-3.png",
+      "/images/multi-agentic-hackathon-dashboard-4.png"
+    ],
+    "links": {
+      "github": "",
+      "liveDemo": ""
+    }
+  },  
+  {
+    "id": "personal-portfolio-website",
+    "title": "Personal Portfolio Website",
+    "description": "A modern, fully responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS, featuring project showcases, a contact form, dark mode, and security best practices.",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Vercel", "EmailJS", "reCAPTCHA"],
+    "year": 2025,
+    "features": [
+      "Responsive layout across devices",
+      "Secure contact form with CAPTCHA and rate limiting (anticipated)",
+      "Dynamic project content powered by JSON",
+      "Deployed on Vercel with CI/CD pipeline (anticipated)",
+      "Uses Shadcn UI components with theme support",
+      "Dark mode and custom color theme"
+    ],
+    "images": [
+      "/images/portfolio-website.png",
+      "/images/portfolio-website-2.png"
+    ],
+    "links": {
+      "github": "https://github.com/tristanjarvey/portfolio",
+      "liveDemo": ""
+    }
+  },
+  {
+    "id": "student-course-registration-system",
+    "title": "Student Course Registration System",
+    "description": "A web-based platform built with Django to streamline course registration and management for students, faculty, and administrators.",
+    "technologies": ["Django", "Python", "MySQL", "Bootstrap", "HTML", "CSS", "JavaScript"],
+    "year": 2025,
+    "features": [
+      "Role-based access control (students, faculty, admins)",
+      "Student course registration and progress tracking",
+      "Faculty schedule and enrollment stats",
+      "Admin dashboard with semester scheduling and course overrides"
+    ],
+    "images": [
+      "/images/scrs-login.png",
+      "/images/scrs-admin-dashboard.png",
+      "/images/scrs-admin-courses.png",
+      "/images/scrs-admin-create-course.png",
+      "/images/scrs-course-catalog.png",
+      "/images/scrs-student-courses.png"
+    ],
+    "links": {
+      "github": "https://github.com/tristanjarvey/StudentCourseRegistrationSystem",
+      "liveDemo": ""
+    }
+  }
+]
