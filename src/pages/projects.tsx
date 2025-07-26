@@ -7,7 +7,7 @@ export default function ProjectsPage() {
             <div className="text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">My Projects</h1>
                 <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
-                    A projection of my latest work, showcasing full-stack development, 
+                    A collection of my latest work, showcasing full-stack development, 
                     AI integrations, and user-centered design solutions.
                 </p>
             </div>

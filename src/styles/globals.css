@@ -85,7 +85,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f0f0f;
+    --background: #171717;
     --foreground: #e9e8e4;
   }
 }
@@ -141,7 +141,7 @@ body {
 
 /* Force dark theme for the entire site */
 html {
-  background-color: #0f0f0f !important;
+  background-color: #171717 !important;
   color: #ffffff !important;
 }
 

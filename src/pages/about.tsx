@@ -11,6 +11,12 @@ import {
   TypographyBlockquote,
 } from "@/components/ui/typography";
 
+// Tailwind class constants
+const bodyText = "text-lg leading-relaxed text-white";
+const sectionHeader = "text-white mb-8 border-neutral-300/20";
+const primaryLink = "inline-flex items-center justify-center px-6 py-3 bg-light text-dark font-semibold rounded-lg hover:overLight transition-colors";
+const secondaryLink = "inline-flex items-center justify-center px-6 py-3 border border-neutral-300 text-white font-semibold rounded-lg hover:overDark transition-colors";
+
 export default function AboutPage() {
   const skills = {
     "Frontend": ["Next.js", "TypeScript", "React", "Angular", "Tailwind CSS"],
@@ -63,31 +69,44 @@ export default function AboutPage() {
 
       {/* Bio Section */}
       <section className="mb-16">
-        <TypographyH2 className="text-white mb-6 border-neutral-300/20">
+        <TypographyH2 className={sectionHeader}>
           About Me
         </TypographyH2>
         <div className="space-y-6">
-          <TypographyP className="text-lg leading-relaxed text-white">
+          <TypographyP className={bodyText}>
           I&apos;m a psychology graduate turned software developer, dedicated to building human-centered 
           software that automates the tedious and amplifies what makes us uniquely capable—our ability 
           to think, create, and connect.
           </TypographyP>
-          <TypographyP className="text-lg leading-relaxed text-white">
+          <TypographyP className={`${bodyText} pb-4`}>
           With over a decade of experience across 15+ roles and 8 industries, I&apos;ve developed a 
           systems-oriented lens that thrives on complexity and nuance. Whether it&apos;s streamlining 
           workflows, architecting AI integrations, or translating messy human problems into elegant 
           code, I bring a unique ability to connect human insight with technical innovation.
           </TypographyP>
-          <TypographyBlockquote className="border-neutral-300 text-neutral-300">
+          <TypographyBlockquote className="text-xl border-neutral-300 text-neutral-300 py-8">
             &ldquo;I have no intention of trying to outsmart the future—just to build tools that help 
             us meet it with more focus and less friction.&rdquo;
           </TypographyBlockquote>
+          <TypographyP className={`${bodyText} pt-4`}>
+            I hold space for opportunities that align skill with soul—where I can build meaningful, human-centered software alongside thoughtful, driven people. I’m especially drawn to roles or projects where:
+          </TypographyP>
+          <div className={bodyText}>
+            <TypographyList>
+              <li><strong>Systems thinking meets real-world impact</strong>—where I can architect resilient, elegant solutions that serve people, not just metrics.</li>
+              <li><strong>Curiosity and integrity are cultural cornerstones</strong>—valuing the why behind the work, not just the what.</li>
+              <li><strong>There’s room to grow</strong>—not through titles, but by taking ownership, showing up consistently, and supporting others.</li>
+            </TypographyList>
+            <TypographyP>
+              <em>TL;DR: Thoughtful builder who takes ownership, navigates complexity, and follows through.</em>
+            </TypographyP>
+          </div>
         </div>
       </section>
 
       {/* Skills Section */}
       <section className="mb-16">
-        <TypographyH2 className="text-white mb-8 border-neutral-300/20">
+        <TypographyH2 className={sectionHeader}>
           Skills & Technologies
         </TypographyH2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -116,7 +135,7 @@ export default function AboutPage() {
 
       {/* Core Values Section */}
       <section className="mb-16">
-        <TypographyH2 className="text-white mb-8 border-neutral-300/20">
+        <TypographyH2 className={sectionHeader}>
           Core Values & Professional Focus
         </TypographyH2>
         <div className="grid md:grid-cols-2 gap-6">
@@ -137,7 +156,7 @@ export default function AboutPage() {
 
       {/* Fun Facts Section */}
       <section className="mb-16">
-        <TypographyH2 className="text-white mb-8 border-neutral-300/20">
+        <TypographyH2 className={sectionHeader}>
           Fun Facts
         </TypographyH2>
         <Card className="bg-dark/50 border-neutral-300/20">
@@ -157,13 +176,13 @@ export default function AboutPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
             href="/projects" 
-            className="inline-flex items-center justify-center px-6 py-3 bg-light text-dark font-semibold rounded-lg hover:bg-gold/90 transition-colors"
+            className={primaryLink}
           >
             View My Work
           </Link>
           <Link 
             href="/contact" 
-            className="inline-flex items-center justify-center px-6 py-3 border border-neutral-300 text-white font-semibold rounded-lg hover:bg-neutral-300 hover:text-dark transition-colors"
+            className={secondaryLink}
           >
             Get In Touch
           </Link>

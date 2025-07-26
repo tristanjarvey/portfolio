@@ -8,7 +8,7 @@ const config = {
     theme: {
       extend: {
         colors: {
-          dark: '#0f0f0f',
+          dark: '#171717',
           gold: '#FFD700',
           interactive: 'hsl(var(--interactive))',
           neutral: {
