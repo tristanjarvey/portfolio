@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 import ProjectCarousel from './ProjectCarousel';
 
 type Project = {
@@ -53,8 +54,9 @@ export default function ProjectCard({
                 <div className="flex gap-3">
                     {links.github && (
                         <Button asChild variant="outline">
-                            <a href={links.github} target="_blank" rel="noopener noreferrer">
+                            <a href={links.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                                 GitHub
+                                <ExternalLink className="w-4 h-4" />
                             </a>
                         </Button>
                     )}

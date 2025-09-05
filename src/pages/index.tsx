@@ -60,7 +60,7 @@ export default function Home() {
           </div>
           <div className="text-center p-6 border border-theme rounded-lg bg-card">
             <h3 className="text-xl font-semibold mb-3 text-theme">Contact</h3>
-            <p className="text-theme mb-4">Ready to work together? Let&apos;s discuss your project</p>
+            <p className="text-theme mb-4">Let’s connect. Open to projects, ideas, or a quick chat.</p>
             <Button asChild variant="outline">
               <Link href="/contact">Get In Touch</Link>
             </Button>

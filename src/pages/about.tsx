@@ -171,7 +171,7 @@ export default function AboutPage() {
 
       {/* Call to Action */}
       <section className="text-center">
-        <TypographyH3 className="text-theme mb-4">Ready to Work Together?</TypographyH3>
+        <TypographyH3 className="text-theme mb-4">Let’s Connect</TypographyH3>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild>
             <Link href="/projects">
