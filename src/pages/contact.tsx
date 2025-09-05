@@ -5,9 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
-// Tailwind class constants
-const submitButton = "inline-flex items-center justify-center px-6 py-3 border border-neutral-300 text-white font-semibold rounded-lg hover:overDark transition-colors";
-
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
@@ -62,6 +59,7 @@ export default function ContactPage() {
           value={form.name}
           onChange={handleChange}
           required
+          className="bg-card text-theme border-theme placeholder:text-theme"
         />
         <Input
           name="email"
@@ -70,6 +68,7 @@ export default function ContactPage() {
           value={form.email}
           onChange={handleChange}
           required
+          className="bg-card text-theme border-theme placeholder:text-theme"
         />
         <Textarea
           name="message"
@@ -77,12 +76,17 @@ export default function ContactPage() {
           value={form.message}
           onChange={handleChange}
           required
+          className="bg-card text-theme border-theme placeholder:text-theme"
         />
-        <ReCAPTCHA
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string}
-          onChange={handleCaptcha}
-        />
-        <Button type="submit" disabled={isLoading} className={submitButton}>
+        {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ? (
+          <ReCAPTCHA
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string}
+            onChange={handleCaptcha}
+          />
+        ) : (
+          <p className="text-red-500">CAPTCHA failed to load. Please try again later.</p>
+        )}
+        <Button type="submit" disabled={isLoading}>
           { isLoading ? "Sending..." : "Send Message"}
         </Button>
         {success && <p className="text-green-500 text-sm">{success}</p>}
