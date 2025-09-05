@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Sun, Moon } from "lucide-react";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
@@ -24,7 +25,11 @@ export default function ThemeToggle() {
   if (!mounted) return null;
 
   const getThemeIcon = () => {
-    return theme === 'light' ? '☀️' : '🌙';
+    return theme === 'light' ? (
+      <Sun className="w-4 h-4 text-black" />
+    ) : (
+      <Moon className="w-4 h-4 text-white" />
+    );
   };
 
   const getThemeLabel = () => {
@@ -39,8 +44,7 @@ export default function ThemeToggle() {
       className="border-theme text-theme hover:bg-theme-hover transition-colors"
       title={`Current theme: ${getThemeLabel()}. Click to switch to ${theme === 'light' ? 'dark' : 'light'} mode.`}
     >
-      <span className="mr-2">{getThemeIcon()}</span>
-      {getThemeLabel()}
+      {getThemeIcon()}
     </Button>
   );
 }
