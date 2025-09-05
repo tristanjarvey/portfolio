@@ -5,8 +5,8 @@ export default function ProjectsPage() {
     return (
         <main className="container mx-auto px-4 py-12 max-w-6xl">
             <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">My Projects</h1>
-                <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
+                <h1 className="text-4xl md:text-5xl font-bold text-theme mb-6">My Projects</h1>
+                <p className="text-xl text-theme max-w-2xl mx-auto">
                     A collection of my latest work, showcasing full-stack development, 
                     AI integrations, and user-centered design solutions.
                 </p>

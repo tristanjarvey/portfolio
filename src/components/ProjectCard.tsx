@@ -26,16 +26,16 @@ export default function ProjectCard({
     links
 }: Project) {
     return (
-        <Card className="bg-dark text-white overflow-hidden">
+        <Card className="bg-card text-theme overflow-hidden border-theme">
             <CardHeader className="p-0">
                 <ProjectCarousel images={images} title={title} />
             </CardHeader>
             <CardContent className="space-y-4">
                 <div className="flex items-start justify-between gap-4">
-                    <h2 className="text-xl font-semibold flex-1 leading-tight">{title}</h2>
+                    <h2 className="text-xl font-semibold flex-1 leading-tight text-theme">{title}</h2>
                     <span className="text-sm text-gold flex-shrink-0">{year}</span>
                 </div>
-                <p className="text-md">{description}</p>
+                <p className="text-md text-theme">{description}</p>
                 <div className="flex flex-wrap gap-2">
                     {technologies.map((tech) => (
                         <Badge key={tech} variant="outline" className="text-sm border-gold text-gold">
@@ -44,7 +44,7 @@ export default function ProjectCard({
                     ))}
                 </div>
                 {features && (
-                    <ul className="list-disc list-inside text-md text-neutral-300">
+                    <ul className="list-disc list-inside text-md text-theme">
                         {features.map((f, i) => (
                             <li key={i}>{f}</li>
                         ))}
@@ -52,7 +52,7 @@ export default function ProjectCard({
                 )}
                 <div className="flex gap-3">
                     {links.github && (
-                        <Button asChild variant="secondary">
+                        <Button asChild variant="outline">
                             <a href={links.github} target="_blank" rel="noopener noreferrer">
                                 GitHub
                             </a>

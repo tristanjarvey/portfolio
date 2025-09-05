@@ -56,7 +56,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         return res.status(200).json({ success: true });
 
     } catch (err) {
-        console.error("Error in /api/contact:", err);
+        console.error("Error in /api/contact: ", err);
         return res.status(500).json({ success: false, error: "Email failed to send" });
     }
 }
