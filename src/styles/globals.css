@@ -198,3 +198,7 @@ body {
 .hover\:text-theme-hover:hover {
   color: var(--secondary-foreground) !important;
 }
+
+.placeholder\:text-theme::placeholder {
+  color: var(--foreground) !important;
+}
